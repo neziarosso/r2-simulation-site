@@ -27,7 +27,7 @@ export default function AboutSection() {
         </Reveal>
 
         <Reveal as="div" delay={120} className="order-1 lg:order-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+          <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl">
             <Image
               src="/images/team/evento-r2-simulation.jpg"
               alt={t.about.imageAlt}
