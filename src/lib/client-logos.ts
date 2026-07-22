@@ -14,4 +14,5 @@ export const clientLogos: Record<string, string> = {
 export const partnerLogos: Record<string, string> = {
   "Fundação Araucária": "/images/partners/fundacao-araucaria.jpeg",
   "Centelha (MCTI)": "/images/partners/centelha.jpeg",
+  CERNN: "/images/partners/cernn.jpeg",
 };
