@@ -13,7 +13,10 @@ const imagesBySlugIndex = [
     src: "/images/team/laboratorio-reologia-cernn.jpg",
     alt: "Ensaio de reologia em laboratório: mistura sendo preparada com misturador de imersão",
   },
-  placeholderImages.serviceCourses,
+  {
+    src: "/images/team/treinamento-reologia-iconic.jpg",
+    alt: "Treinamento de reologia aplicada ministrado pela R2 Simulation na empresa ICONIC",
+  },
 ];
 
 export default function ServicosContent() {

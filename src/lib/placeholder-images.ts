@@ -16,8 +16,4 @@ export const placeholderImages = {
     src: "https://images.unsplash.com/photo-1690356107486-0796de806f63?auto=format&fit=crop&w=1200&q=80",
     alt: "Equipamento térmico industrial em operação",
   },
-  serviceCourses: {
-    src: "https://images.unsplash.com/photo-1646579885920-0c9a01cb7078?auto=format&fit=crop&w=1200&q=80",
-    alt: "Sala de treinamento técnico com instrutor e alunos",
-  },
 } as const;
