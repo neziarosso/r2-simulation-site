@@ -5,6 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import LogoChip from "@/components/LogoChip";
 import CtaSection from "@/components/CtaSection";
 import Reveal from "@/components/Reveal";
+import { clientLogos } from "@/lib/client-logos";
 
 export default function ClientesParceirosContent() {
   const { t } = useLanguage();
@@ -31,7 +32,7 @@ export default function ClientesParceirosContent() {
           <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
             {t.clientsPage.clients.map((name, i) => (
               <Reveal key={name} delay={i * 60}>
-                <LogoChip name={name} />
+                <LogoChip name={name} logoSrc={clientLogos[name]} />
               </Reveal>
             ))}
           </div>
