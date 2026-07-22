@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0b1220;
+
+  /* R2 Simulation — design tokens */
+  --color-navy-950: #050d1c;
+  --color-navy-900: #0b1f3a;
+  --color-navy-800: #122a4d;
+  --color-navy-700: #1a3a66;
+  --color-navy-600: #234c85;
+
+  --color-cyan-500: #12b6d6;
+  --color-cyan-400: #2fd4f0;
+  --color-cyan-300: #7fe6f7;
+
+  /* CFD-style spectrum, taken from the R2 brand mark arc */
+  --color-spec-blue: #0003fb;
+  --color-spec-teal: #12b6c4;
+  --color-spec-green: #33c46a;
+  --color-spec-yellow: #f1de00;
+  --color-spec-orange: #e18501;
+  --color-spec-red: #ff0605;
+
+  --color-ink: #0b1220;
+  --color-slate: #5a5e66;
+  --color-mist: #f1f3f6;
+  --color-mist-dark: #e4e8ee;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-600: var(--color-navy-600);
+
+  --color-cyan-500: var(--color-cyan-500);
+  --color-cyan-400: var(--color-cyan-400);
+  --color-cyan-300: var(--color-cyan-300);
+
+  --color-spec-blue: var(--color-spec-blue);
+  --color-spec-teal: var(--color-spec-teal);
+  --color-spec-green: var(--color-spec-green);
+  --color-spec-yellow: var(--color-spec-yellow);
+  --color-spec-orange: var(--color-spec-orange);
+  --color-spec-red: var(--color-spec-red);
+
+  --color-ink: var(--color-ink);
+  --color-slate: var(--color-slate);
+  --color-mist: var(--color-mist);
+  --color-mist-dark: var(--color-mist-dark);
+
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-cyan-400);
+  color: var(--color-navy-950);
+}
+
+/* Reveal-on-scroll utility, driven by the Reveal component toggling data-visible */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal="fade"] {
+  transform: none;
+}
+
+[data-reveal][data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+.spectrum-gradient {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-spec-blue) 0%,
+    var(--color-spec-teal) 28%,
+    var(--color-spec-green) 48%,
+    var(--color-spec-yellow) 65%,
+    var(--color-spec-orange) 82%,
+    var(--color-spec-red) 100%
+  );
+}
+
+.spectrum-text {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-spec-blue) 0%,
+    var(--color-spec-teal) 30%,
+    var(--color-spec-yellow) 60%,
+    var(--color-spec-red) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.container-page {
+  max-width: 84rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-page {
+    padding-inline: 3rem;
+  }
+}
