@@ -9,7 +9,10 @@ import { placeholderImages } from "@/lib/placeholder-images";
 const imagesBySlugIndex = [
   placeholderImages.serviceCfd,
   placeholderImages.serviceHeat,
-  placeholderImages.serviceFluids,
+  {
+    src: "/images/team/laboratorio-reologia-cernn.jpg",
+    alt: "Ensaio de reologia em laboratório: mistura sendo preparada com misturador de imersão",
+  },
   placeholderImages.serviceCourses,
 ];
 

@@ -29,7 +29,7 @@ export const en: Dictionary = {
       "At R2 Simulation, we connect advanced technical expertise with cutting-edge digital tools to deliver tailored solutions in computational simulation, thermal analysis, fluid performance and mechanical design. We work in partnership with companies and research centers, generating real impact on products, processes and people.",
     paragraph2:
       "Our team is made up of engineers with solid academic backgrounds and hands-on experience in complex industrial environments.",
-    imageAlt: "R2 Simulation engineering team analyzing simulation results",
+    imageAlt: "R2 Simulation team at a technical conference, next to the company's banner",
   },
   servicesPreview: {
     eyebrow: "What we do",

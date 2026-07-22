@@ -29,7 +29,7 @@ export const pt: Dictionary = {
       "Na R2 Simulation, conectamos conhecimento técnico avançado com ferramentas digitais de última geração para oferecer soluções sob medida nas áreas de simulação computacional, análise térmica, desempenho de fluidos e desenvolvimento de projetos mecânicos. Atuamos em parceria com empresas e centros de pesquisa, gerando impacto real em produtos, processos e pessoas.",
     paragraph2:
       "Nosso time é formado por engenheiros com sólida formação acadêmica e experiência prática em ambientes industriais complexos.",
-    imageAlt: "Equipe de engenharia da R2 Simulation analisando resultados de simulação",
+    imageAlt: "Equipe da R2 Simulation em evento técnico, ao lado do banner institucional da empresa",
   },
   servicesPreview: {
     eyebrow: "O que fazemos",

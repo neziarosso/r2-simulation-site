@@ -32,7 +32,7 @@ export default function Footer() {
             alt="R2 Simulation"
             width={2069}
             height={321}
-            className="h-9 w-auto"
+            className="h-9 w-auto self-start"
           />
           <p className="max-w-sm text-sm leading-relaxed text-white/60">{t.footer.tagline}</p>
           <div className="flex items-center gap-3 pt-2">

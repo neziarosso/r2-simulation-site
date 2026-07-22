@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useLanguage } from "@/i18n/language-provider";
 import Reveal from "./Reveal";
-import { placeholderImages } from "@/lib/placeholder-images";
 
 export default function AboutSection() {
   const { t } = useLanguage();
@@ -30,7 +29,7 @@ export default function AboutSection() {
         <Reveal as="div" delay={120} className="order-1 lg:order-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src={placeholderImages.about.src}
+              src="/images/team/evento-r2-simulation.jpg"
               alt={t.about.imageAlt}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
