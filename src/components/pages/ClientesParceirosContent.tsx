@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/i18n/language-provider";
 import SectionHeading from "@/components/SectionHeading";
 import LogoChip from "@/components/LogoChip";
 import CtaSection from "@/components/CtaSection";
 import Reveal from "@/components/Reveal";
-import { clientLogos } from "@/lib/client-logos";
+import { clientLogos, partnerLogos } from "@/lib/client-logos";
 
 export default function ClientesParceirosContent() {
   const { t } = useLanguage();
@@ -47,19 +48,33 @@ export default function ClientesParceirosContent() {
             </h2>
           </Reveal>
           <div className="mt-8 grid gap-5 sm:grid-cols-3">
-            {t.clientsPage.partners.map((partner, i) => (
-              <Reveal key={partner.name} delay={i * 90}>
-                <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[color:var(--color-mist-dark)] bg-white p-6 transition-shadow hover:shadow-md">
-                  <span className="h-1 w-10 rounded-full spectrum-gradient" />
-                  <h3 className="mt-4 font-heading text-lg font-semibold text-[color:var(--color-navy-900)]">
-                    {partner.name}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[color:var(--color-slate)]">
-                    {partner.description}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+            {t.clientsPage.partners.map((partner, i) => {
+              const logoSrc = partnerLogos[partner.name];
+              return (
+                <Reveal key={partner.name} delay={i * 90}>
+                  <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[color:var(--color-mist-dark)] bg-white p-6 transition-shadow hover:shadow-md">
+                    <span className="h-1 w-10 rounded-full spectrum-gradient" />
+                    {logoSrc && (
+                      <div className="relative mt-4 h-12 w-full max-w-[160px] grayscale transition-all duration-300 group-hover:grayscale-0">
+                        <Image
+                          src={logoSrc}
+                          alt={partner.name}
+                          fill
+                          sizes="160px"
+                          className="object-contain object-left"
+                        />
+                      </div>
+                    )}
+                    <h3 className="mt-4 font-heading text-lg font-semibold text-[color:var(--color-navy-900)]">
+                      {partner.name}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-[color:var(--color-slate)]">
+                      {partner.description}
+                    </p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
