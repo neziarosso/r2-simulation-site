@@ -186,6 +186,31 @@ export const pt: Dictionary = {
         description:
           "Centro de Pesquisas em Reologia e Fluidos Não Newtonianos.",
       },
+      {
+        name: "ESSS",
+        description:
+          "Especialista latino-americana em simulação numérica e softwares CAE.",
+      },
+      {
+        name: "Sistema Fiep",
+        description:
+          "Federação das Indústrias do Paraná — representação e apoio à indústria.",
+      },
+      {
+        name: "Instituto SENAI de Tecnologia",
+        description:
+          "Inovação e tecnologia aplicada ao desenvolvimento industrial.",
+      },
+      {
+        name: "SEBRAE",
+        description:
+          "Apoio a micro e pequenas empresas e ao empreendedorismo.",
+      },
+      {
+        name: "SPRINT — Incubadora da UTFPR",
+        description:
+          "Incubadora de empresas de base tecnológica da UTFPR.",
+      },
     ],
   },
   contact: {

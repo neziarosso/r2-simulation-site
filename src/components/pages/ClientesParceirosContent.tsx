@@ -47,7 +47,7 @@ export default function ClientesParceirosContent() {
               {t.clientsPage.partnersTitle}
             </h2>
           </Reveal>
-          <div className="mt-8 grid gap-5 sm:grid-cols-3">
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {t.clientsPage.partners.map((partner, i) => {
               const logoSrc = partnerLogos[partner.name];
               return (

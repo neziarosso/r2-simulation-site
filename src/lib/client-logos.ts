@@ -15,4 +15,10 @@ export const partnerLogos: Record<string, string> = {
   "Fundação Araucária": "/images/partners/fundacao-araucaria.jpeg",
   "Centelha (MCTI)": "/images/partners/centelha.jpeg",
   CERNN: "/images/partners/cernn.jpeg",
+  ESSS: "/images/partners/esss.png",
+  "Sistema Fiep": "/images/partners/sistema-fiep.jpeg",
+  "Instituto SENAI de Tecnologia": "/images/partners/instituto-senai.png",
+  SEBRAE: "/images/partners/sebrae.png",
+  "SPRINT — Incubadora da UTFPR": "/images/partners/sprint-utfpr.png",
+  "SPRINT — UTFPR Incubator": "/images/partners/sprint-utfpr.png",
 };

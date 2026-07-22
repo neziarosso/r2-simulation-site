@@ -183,6 +183,30 @@ export const en: Dictionary = {
         name: "CERNN",
         description: "Research Center on Rheology and Non-Newtonian Fluids.",
       },
+      {
+        name: "ESSS",
+        description:
+          "Latin America's leading CAE and numerical simulation software specialist.",
+      },
+      {
+        name: "Sistema Fiep",
+        description:
+          "Federation of Industries of Paraná — support and representation for local industry.",
+      },
+      {
+        name: "Instituto SENAI de Tecnologia",
+        description:
+          "Innovation and technology applied to industrial development.",
+      },
+      {
+        name: "SEBRAE",
+        description:
+          "Support for micro and small businesses and entrepreneurship.",
+      },
+      {
+        name: "SPRINT — UTFPR Incubator",
+        description: "Technology-based business incubator at UTFPR.",
+      },
     ],
   },
   contact: {

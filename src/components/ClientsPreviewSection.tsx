@@ -24,7 +24,7 @@ export default function ClientsPreviewSection() {
           subtitle={t.clientsPreview.subtitle}
         />
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
           {names.map((name, i) => (
             <Reveal key={name} delay={i * 60}>
               <LogoChip name={name} logoSrc={clientLogos[name] ?? partnerLogos[name]} />
