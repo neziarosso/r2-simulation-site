@@ -12,6 +12,7 @@ export interface ServiceContent {
   highlight?: string;
   ctaLabel: string;
   partnerBadge?: string;
+  imageCredit?: string;
 }
 
 export interface Dictionary {

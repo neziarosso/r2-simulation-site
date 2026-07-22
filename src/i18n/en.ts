@@ -108,6 +108,7 @@ export const en: Dictionary = {
         applications:
           "Applications: mixing processes, complex flows, thermal performance, structural behavior, among others.",
         ctaLabel: "Ask about this service",
+        imageCredit: "Source: Poletto et al., SPE-200689-MS (2020) — CERNN/UTFPR",
       },
       {
         slug: "heat-transfer",

@@ -108,6 +108,11 @@ export default function ServiceDetailBlock({
                   {service.partnerBadge}
                 </span>
               )}
+              {service.imageCredit && (
+                <span className="absolute bottom-2 right-3 text-[10px] font-medium text-white/70">
+                  {service.imageCredit}
+                </span>
+              )}
             </div>
           </Reveal>
         </div>

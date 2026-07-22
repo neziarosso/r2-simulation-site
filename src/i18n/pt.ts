@@ -108,6 +108,7 @@ export const pt: Dictionary = {
         applications:
           "Aplicações: processos de mistura, escoamentos complexos, desempenho térmico, comportamento estrutural, entre outros.",
         ctaLabel: "Fale sobre este serviço",
+        imageCredit: "Fonte: Poletto et al., SPE-200689-MS (2020) — CERNN/UTFPR",
       },
       {
         slug: "transferencia-de-calor",

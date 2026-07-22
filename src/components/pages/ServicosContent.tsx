@@ -7,7 +7,10 @@ import CtaSection from "@/components/CtaSection";
 import { placeholderImages } from "@/lib/placeholder-images";
 
 const imagesBySlugIndex = [
-  placeholderImages.serviceCfd,
+  {
+    src: "/images/services/cfd-scale-simulation.jpg",
+    alt: "Contorno de velocidade em simulação CFD-DEM de deposição de incrustação em válvula de fundo de poço",
+  },
   placeholderImages.serviceHeat,
   {
     src: "/images/team/laboratorio-reologia-cernn.jpg",
