@@ -142,6 +142,7 @@ export const pt: Dictionary = {
         highlight:
           "Ideal para empresas que trabalham com graxas, polímeros, tintas, cosméticos e produtos técnicos avançados.",
         ctaLabel: "Fale sobre este serviço",
+        partnerBadge: "Parceria técnica: CERNN",
       },
       {
         slug: "cursos-personalizados",
@@ -159,6 +160,7 @@ export const pt: Dictionary = {
         ],
         highlight: "Formato flexível: treinamentos presenciais, online ou híbridos.",
         ctaLabel: "Solicitar proposta de curso",
+        partnerBadge: "Treinamento aplicado na ICONIC",
       },
     ],
   },
@@ -169,7 +171,7 @@ export const pt: Dictionary = {
       "Construímos relações de longo prazo com empresas de base industrial e instituições de fomento à inovação.",
     clientsTitle: "Clientes",
     partnersTitle: "Parceiros institucionais",
-    clients: ["Petrobras", "Brasil Biofuels", "Recifer", "Silomax"],
+    clients: ["Petrobras", "Brasil Biofuels", "Recifer", "Silomax", "ICONIC", "Immer Messen"],
     partners: [
       {
         name: "Fundação Araucária",

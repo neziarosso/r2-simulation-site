@@ -11,6 +11,7 @@ export interface ServiceContent {
   applications?: string;
   highlight?: string;
   ctaLabel: string;
+  partnerBadge?: string;
 }
 
 export interface Dictionary {

@@ -140,6 +140,7 @@ export const en: Dictionary = {
         highlight:
           "Ideal for companies working with greases, polymers, paints, cosmetics and advanced technical products.",
         ctaLabel: "Ask about this service",
+        partnerBadge: "Technical partner: CERNN",
       },
       {
         slug: "custom-training",
@@ -157,6 +158,7 @@ export const en: Dictionary = {
         ],
         highlight: "Flexible format: in-person, online or hybrid training.",
         ctaLabel: "Request a training proposal",
+        partnerBadge: "Training delivered at ICONIC",
       },
     ],
   },
@@ -167,7 +169,7 @@ export const en: Dictionary = {
       "We build long-term relationships with industrial companies and innovation-funding institutions.",
     clientsTitle: "Clients",
     partnersTitle: "Institutional partners",
-    clients: ["Petrobras", "Brasil Biofuels", "Recifer", "Silomax"],
+    clients: ["Petrobras", "Brasil Biofuels", "Recifer", "Silomax", "ICONIC", "Immer Messen"],
     partners: [
       {
         name: "Fundação Araucária",

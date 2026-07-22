@@ -102,6 +102,12 @@ export default function ServiceDetailBlock({
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-navy-950)]/40 via-transparent to-transparent" />
+              {service.partnerBadge && (
+                <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 text-xs font-semibold text-[color:var(--color-navy-900)] shadow-sm backdrop-blur-sm">
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full spectrum-gradient" />
+                  {service.partnerBadge}
+                </span>
+              )}
             </div>
           </Reveal>
         </div>

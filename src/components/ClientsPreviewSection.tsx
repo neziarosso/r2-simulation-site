@@ -23,7 +23,7 @@ export default function ClientsPreviewSection() {
           subtitle={t.clientsPreview.subtitle}
         />
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-7">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3">
           {names.map((name, i) => (
             <Reveal key={name} delay={i * 60}>
               <LogoChip name={name} />

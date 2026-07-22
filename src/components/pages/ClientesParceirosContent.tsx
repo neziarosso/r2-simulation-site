@@ -28,7 +28,7 @@ export default function ClientesParceirosContent() {
               {t.clientsPage.clientsTitle}
             </h2>
           </Reveal>
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
             {t.clientsPage.clients.map((name, i) => (
               <Reveal key={name} delay={i * 60}>
                 <LogoChip name={name} />
